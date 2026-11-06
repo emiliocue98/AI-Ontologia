@@ -24,7 +24,7 @@ class AlumnoBase(BaseModel):
     genero: str = Field(..., description="masculino/femenino/otro")
     peso: float = Field(..., description="Peso del estudiante en kilogramos")
     estatus: str = Field(..., description="Estatus del estudiante, por ejemplo: activo/inactivo")
-    clase_ontologia: str = Field(..., default="Alumno", description="Clase de ontología a la que pertenece el estudiante")
+    clase_ontologica: str = Field(default="Alumno", description="Clase de ontología a la que pertenece el estudiante")
 
 class AlumnoCreate(AlumnoBase):
     pass # Por definir, se puede agregar validaciones adicionales para la creación de un alumno
